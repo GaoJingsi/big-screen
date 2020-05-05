@@ -1,7 +1,7 @@
 $(function () {
 //    绑定地图
-    $.get('../data/geo-json/chengdushi.json', function (json) {
-        $.get('../data/data/center-top.json', function (data) {
+    $.get('./data/geo-json/chengdushi.json', function (json) {
+        $.get('./data/data/center-top.json', function (data) {
             var count = 0;
             echarts.registerMap('chengdushi', json);
             var chart = echarts.init(document.getElementById('map'), 'customed');
@@ -42,7 +42,7 @@ $(function () {
         })
     });
 //    绑定成都市柴油货车保有量分析
-    $.get('../data/data/center-bottom.json', function (json) {
+    $.get('./data/data/center-bottom.json', function (json) {
         var chart = echarts.init(document.getElementById('baoyouliang'), 'customed');
         chart.setOption({
             tooltip: {
@@ -236,7 +236,7 @@ $(function () {
         });
     });
 //    页面左侧，中间一栏，上面的图
-    $.get('../data/data/left-middle-1.json', function (json) {
+    $.get('./data/data/left-middle-1.json', function (json) {
         var chart = echarts.init(document.getElementById('left-middle-top'), 'customed');
         chart.setOption({
             // legend: {
@@ -295,7 +295,7 @@ $(function () {
         });
     });
 //    页面左侧，中间一栏，下面的图
-    $.get('../data/data/left-middle-2.json', function (json) {
+    $.get('./data/data/left-middle-2.json', function (json) {
         var chart = echarts.init(document.getElementById('left-middle-bottom'), 'customed');
         chart.setOption({
             tooltip: {
@@ -362,7 +362,7 @@ $(function () {
         });
     });
 //    页面左侧，下面一栏，下面的图
-    $.get('../data/data/center-bottom.json', function (json) {
+    $.get('./data/data/center-bottom.json', function (json) {
         var chart = echarts.init(document.getElementById('left-bottom-bottom'), 'customed');
         chart.setOption({
             grid: {
@@ -436,7 +436,7 @@ $(function () {
         });
     });
 //    页面右侧，中间一栏，上面的图
-    $.get('../data/data/right-middle-top.json', function (json) {
+    $.get('./data/data/right-middle-top.json', function (json) {
         var chart = echarts.init(document.getElementById('right-middle-top'), 'customed');
         chart.setOption({
             tooltip: {
@@ -502,7 +502,7 @@ $(function () {
         });
     });
 //    页面右侧，中间一栏，下面的图
-    $.get('../data/data/right-middle-bottom.json', function (json) {
+    $.get('./data/data/right-middle-bottom.json', function (json) {
         var chart = echarts.init(document.getElementById('right-middle-bottom'), 'customed');
         chart.setOption({
             // legend: {
@@ -561,7 +561,7 @@ $(function () {
         });
     });
 //    页面右侧，下面一栏，左边的图
-    $.get('../data/data/right-bottom-left.json', function (json) {
+    $.get('./data/data/right-bottom-left.json', function (json) {
         var total = 300;
         var colorRegionRate = (json.value / total).toFixed(2);
         var chart = echarts.init(document.getElementById('right-bottom-left'), 'customed');
@@ -650,7 +650,7 @@ $(function () {
         });
     });
 //    页面右侧，下面一栏，右边的图
-    $.get('../data/data/right-bottom-left.json', function (json) {
+    $.get('./data/data/right-bottom-left.json', function (json) {
         var total = 200;
         var colorRegionRate = (json.value / total).toFixed(2);
         var chart = echarts.init(document.getElementById('right-bottom-right'), 'customed');
