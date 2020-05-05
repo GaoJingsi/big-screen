@@ -1,0 +1,274 @@
+@font-face {
+    font-family: "LED";
+    src: url("../fonts/PixelLCD-7.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    background-image: url(../img/index/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container > .left,
+.container > .center,
+.container > .right {
+    height: 100%;
+    margin: 0 10px;
+}
+
+.container > .left,
+.container > .right {
+    width: 25%;
+}
+
+.container > .center {
+    width: 50%;
+}
+
+
+/*版块的样式*/
+.section {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.section > .section-inner {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(8, 76, 120);
+    background-color: rgba(11, 81, 129, 0.2);
+}
+
+.section > .section-inner > .section-header {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    color: rgb(8, 207, 213);
+    text-align: center;
+    background-image: url(../img/index/section-header.png);
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.section > .section-inner > .content {
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+.section-2 {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.section-2 .section-2-inner {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/index/center-top-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+/*每个版块的高度*/
+.left > .section {
+    display: flex;
+    flex-direction: column;
+}
+
+.left > .section.top {
+    height: calc(100% / 6 * 1);
+}
+
+.left > .section.middle {
+    height: calc(100% / 6 * 3);
+}
+
+.left > .section.bottom {
+    height: calc(100% / 6 * 2);
+}
+
+.right > .section {
+    display: flex;
+    flex-direction: column;
+}
+
+.right > .section.top {
+    height: calc(100% / 6 * 1);
+}
+
+.right > .section.middle {
+    height: calc(100% / 6 * 3);
+}
+
+.right > .section.bottom {
+    height: calc(100% / 6 * 2);
+}
+
+.center > .section-2.top {
+    height: 75%;
+}
+
+.center > .section-2.top .section-2-inner {
+    padding: 2%;
+}
+
+.center > .section.bottom {
+    height: 25%;
+}
+
+.left-middle-top-container,
+.right-middle-bottom-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.left-middle-top-container #left-middle-top,
+.left-middle-top-container .legends,
+.right-middle-bottom-container #right-middle-bottom,
+.right-middle-bottom-container .legends {
+    width: 50%;
+}
+
+.legends {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.5rem;
+}
+
+.legends .row-2 {
+    min-height: 1rem;
+    line-height: 1rem;
+}
+
+.legends .legend {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+
+/*echarts图表*/
+.charts {
+    width: 100%;
+    height: 100%;
+}
+
+.charts-2 {
+    width: 100%;
+    height: 50%;
+}
+
+.left-bottom-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-bottom-top .quota {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.left-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-top .quota {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.right-top {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    overflow: auto;
+    padding: 10px;
+    font-size: 0.5rem;
+}
+
+.right-top > .row > .col {
+    min-height: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.right-bottom .row {
+    flex-wrap: nowrap;
+}
+
+/*指标*/
+.quota {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quota dl dd {
+    text-align: center;
+    margin: 0;
+}
+
+.quota dl dd .quota-content {
+    font-size: 2rem;
+    font-family: 'LED';
+}
+
+.quota dl dd .unit {
+    color: rgb(74, 132, 179);
+    font-size: 0.875rem;
+}
+
+.quota dl dt.title {
+    color: rgb(208, 230, 255);
+    font-size: 0.875rem;
+    text-align: center;
+    margin: 0.25rem 0;
+}
+
+.margin-right-10px {
+    margin-right: 10px;
+}
+
+.width-4rem {
+    display: inline-block;
+    width: 4rem;
+}
+
+.limited-vehicle-count {
+    font-family: 'LED';
+    font-size: 0;
+}
+
+.limited-vehicle-count:after{
+    /*clear: both;*/
+    /*display: block;*/
+    /*content: '';*/
+}
+
+.limited-vehicle-count span{
+    margin: 0 2px;
+    font-size: 1.2rem;
+    padding: 2px;
+    border-radius: 2px;
+}

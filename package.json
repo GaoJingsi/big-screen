@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "echarts": "^4.7.0",
+    "echarts-gl": "^1.1.1",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1"
+  }
+}

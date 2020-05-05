@@ -1,0 +1,72 @@
+/*颜色*/
+.color-white {
+    color: white;
+}
+
+.color-green {
+    color: rgb(62, 218, 117);
+}
+
+.color-yellow {
+    color: rgb(242, 223, 62);
+}
+
+.color-orange {
+    color: rgb(216, 126, 10);
+}
+
+.color-skyblue {
+    color: rgb(1, 247, 255);
+}
+
+.color-blue {
+    color: rgb(74, 132, 179);
+}
+
+.background-color-blue {
+    background-color: rgb(2, 157, 252);
+}
+
+.background-color-skyblue {
+    background-color: rgb(37, 218, 253);
+}
+
+.background-color-yellow {
+    background-color: rgb(251, 240, 116);
+}
+
+.background-color-orange {
+    background-color: rgb(250, 129, 128);
+}
+
+.background-color-zihong {
+    background-color: rgb(206, 24, 251);
+}
+
+.background-color-zi {
+    background-color: rgb(142, 82, 251);
+}
+
+/*对齐*/
+.txt-left {
+    text-align: left !important;
+}
+
+.txt-center {
+    text-align: center !important;
+}
+
+.txt-right {
+    text-align: right !important;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row > .col {
+    min-width: 50%;
+    max-width: 100%;
+}
